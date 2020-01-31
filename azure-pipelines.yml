@@ -23,6 +23,6 @@ steps:
     zipAfterPublish: True
 - task: AzureWebApp@1
   inputs:
-    azureSubscription: '<Azure service connection>'
+    azureSubscription: 'vorteil-azure'
     appName: '<Name of web app>'
     package: $(System.ArtifactsDirectory)/**/*.zip 
