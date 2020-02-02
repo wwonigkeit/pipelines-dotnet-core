@@ -21,8 +21,3 @@ steps:
     publishWebProjects: True
     arguments: '--configuration $(BuildConfiguration) --output $(Build.ArtifactStagingDirectory)'
     zipAfterPublish: True
-- task: AzureWebApp@1
-  inputs:
-    azureSubscription: 'vorteil-azure'
-    appName: '<Name of web app>'
-    package: $(System.ArtifactsDirectory)/**/*.zip 
