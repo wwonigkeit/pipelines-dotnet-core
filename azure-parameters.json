@@ -1,0 +1,48 @@
+{
+    "$schema": "https://schema.management.azure.com/schemas/2015-01-01/deploymentParameters.json#",
+    "contentVersion": "1.0.0.0",
+    "parameters": {
+        "location": {
+            "value": "australiaeast"
+        },
+        "networkInterfaceName": {
+            "value": "dotnet21-test143"
+        },
+        "networkSecurityGroupId": {
+            "value": "/subscriptions/40eb3cb3-a114-4cd1-b584-5bbedd2126a2/resourceGroups/vorteil-demo/providers/Microsoft.Network/networkSecurityGroups/vorteil-repo-nsg"
+        },
+        "subnetName": {
+            "value": "default"
+        },
+        "virtualNetworkId": {
+            "value": "/subscriptions/40eb3cb3-a114-4cd1-b584-5bbedd2126a2/resourceGroups/vorteil-demo/providers/Microsoft.Network/virtualNetworks/vorteil-demo-vnet"
+        },
+        "publicIpAddressName": {
+            "value": "dotnet21-test-ip"
+        },
+        "publicIpAddressType": {
+            "value": "Dynamic"
+        },
+        "publicIpAddressSku": {
+            "value": "Basic"
+        },
+        "virtualMachineName": {
+            "value": "dotnet21-test"
+        },
+        "virtualMachineRG": {
+            "value": "vorteil-demo"
+        },
+        "osDiskType": {
+            "value": "Premium_LRS"
+        },
+        "virtualMachineSize": {
+            "value": "Standard_B1ls"
+        },
+        "adminUsername": {
+            "value": "vorteil"
+        },
+        "adminPassword": {
+            "value": null
+        }
+    }
+}
